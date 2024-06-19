@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Football Bets</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+        .container { padding: 20px; }
+        .bet-form, .bets-list { margin-top: 20px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Football Bets</h1>
+        <div class="bet-form">
+            <form id="betForm">
+                <label for="game">Game:</label>
+                <input type="text" id="game" name="game"><br><br>
+                <label for="result">Result:</label>
+                <input type="text" id="result" name="result"><br><br>
+                <label for="amount">Bet Amount:</label>
+                <input type="number" id="amount" name="amount"><br><br>
+                <button type="submit">Place Bet</button>
+            </form>
+        </div>
+        <div class="bets-list">
+            <h2>All Bets</h2>
+            <ul id="betsList"></ul>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
